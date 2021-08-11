@@ -1,0 +1,60 @@
+.large-hero {
+  border-bottom: 10px solid $mainBlue;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__image {
+    grid-column: 1;
+    grid-row: 1;
+    
+    img {
+      display: block;
+    }
+
+  }
+
+  &__text-content {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $mainBlue;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+
+    @mixin atSmall {
+      font-size: 4.7rem;
+    }
+  
+  } 
+
+  &__subtitle {
+    color: $mainBlue;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 0;
+
+    @mixin atSmall {
+      font-size: 2.9rem;
+    }
+  }
+
+  &__descript {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    max-width: 30rem;
+    margin: 1rem auto;
+  }
+
+  @mixin atSmall {
+    font-size: 1.750rem;
+  }
+
+}
